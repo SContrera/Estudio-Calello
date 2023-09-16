@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background: #fff url(img/fondo.jpg) no-repeat fixed;
+  background-size: cover;
+  font-family:'Lato', Arial, Helvetica, sans-serif;
+}
+
+.navBar {
+  display: flex;
+  /*flex-direction: row o column (tambien -reverse), es para la dirección que le vamos a dar al eje ;
+      flex-wrap: wrap o nowrap (tambien -recerse), para ajustarse a la pagina o no, si se recorta */
+  /*Abajo, con flex-flow, usamos una atajo para estas dos propiedades*/
+  flex-flow: row wrap;
+  justify-content: space-between;
+  /*Valores posibles: center, space-evenly, space-between y space-around. Alinea tomando como referencia el eje principal*/
+  align-items: start;
+  /* valores posibles: start, end, stretch, baseline los mismos valores que el Justify-contente.Alinea tomando como refencia el eje secundario.*/
+  gap: 10px;
+  /*align-content: ;*/
+  background-color: black;
+}
+
+.navBar>div {
+  background-color: black;
+  padding: 10px;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: start;
+  align-items: start;
+  color: white;
+  
+  
+}
+.header>section{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: start;
+  
+}
+
+.header>p{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: end;
+  
+}
+
+.footer{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+
+}
