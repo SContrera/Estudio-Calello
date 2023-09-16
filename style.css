@@ -71,7 +71,7 @@ body {
   margin-top: auto;
   color: #fff;
 }
-@media screen and (max-width: 380px) {
+@media screen and (min-width: 380px) {
   .navBar {
     display: flex;
     flex-flow: column wrap;
