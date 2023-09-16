@@ -10,7 +10,10 @@
 body {
   background: #fff url(img/fondo.jpg) no-repeat fixed;
   background-size: cover;
-  font-family:'Lato', Arial, Helvetica, sans-serif;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
 }
 
 .navBar {
@@ -42,29 +45,28 @@ body {
   justify-content: start;
   align-items: start;
   color: white;
-  
-  
+
+
 }
-.header>section{
+
+.header>section {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
   align-items: start;
-  
+
 }
 
-.header>p{
+.header>p {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
   align-items: end;
-  
+
 }
 
-.footer{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-
+.footer {
+  width: 100%;
+  margin-top: auto;
+  color: #fff;
 }
